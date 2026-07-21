@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>GATE CSE 2027 Command Center</title>
+<meta name="description" content="Offline study planner, task manager, and progress dashboard for GATE CSE 2027 preparation." />
+<meta name="theme-color" content="#0a0a12" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icon-192.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="icon-192.svg" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="navOverlay" class="nav-overlay"></div>
+
+<nav id="sideNav" class="side-nav">
+  <div class="side-nav-header">
+    <span class="brand-mark">G</span>
+    <div>
+      <strong>Command Center</strong>
+      <div class="muted small">GATE CSE 2027</div>
+    </div>
+  </div>
+  <!-- nav buttons injected by script.js -->
+</nav>
+
+<div class="app-shell">
+  <header class="topbar">
+    <button id="menuBtn" class="iconbtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+    </button>
+    <h1 id="pageTitle">Dashboard</h1>
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="Search weeks, subjects, tasks…" class="text-input search-input" />
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </header>
+
+  <main id="mainScroll" class="main-scroll">
+    <div id="view" class="view"></div>
+  </main>
+
+</div>
+
+<div id="saveIndicator" class="save-indicator">Saved</div>
+
+<script src="script.js"></script>
+</body>
+</html>
