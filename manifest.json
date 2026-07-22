@@ -1,6 +1,6 @@
 {
   "name": "GATE CSE 2027 Command Center",
-  "short_name": "GATE Planner",
+  "short_name": "AEGIS",
   "description": "Offline study planner, task manager, and progress dashboard for GATE CSE 2027 preparation.",
   "start_url": "./index.html",
   "scope": "./",
